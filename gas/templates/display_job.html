@@ -1,0 +1,57 @@
+<!--
+display_job.html - Create a page that displays the details of a requested job.
+Copyright (C) 2011-2018 Vas Vasiliadis <vas@uchicago.edu>
+University of Chicago
+-->
+{% extends "base.html" %}
+{% block title %}Job Details{% endblock %}
+{% block body %}
+  {% include "header.html" %}
+<div class="container">
+    <div class="page-header">
+      <h1>Annotation Details</h1>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+        {% if job %}
+
+        <!-- Display a list of jobs -->
+        <ul>
+            <li><b>Request/Job ID</b>: {{ job['job_id'] }}</li>
+            <li><b>Request Time</b>: {{ job['submit_time'] }}</li>
+            <li><b>VCF File Name</b>: <a href="{{input_ann}}">{{ job['input_file_name']}}</a></li>
+            <li><b>Status</b>: {{ job['job_status'] }}</li>
+            {% if job['complete_time'] %}
+            <li><b>Complete Time</b>: {{ job['complete_time'] }}</li>
+            {% endif %}
+        </ul> 
+        {% else %}
+          <p>No job found.</p>
+        {% endif %}
+      </div>
+    </div>
+    
+    <hr>
+    <div class="row">
+      <div class="col-md-12">
+        {% if download_status != 'wait_for_complete' %}
+         <ul>
+          {% if download_status == 'ready_to_download' %}
+            <li><b>Annotated Results File</b>: <a href="{{result_ann}}">Download</a></li>
+          {% elif download_status == 'archived_to_glacier' %}
+            <li><b>Annotated Results File</b>: <a href="{{ url_for('subscribe') }}">Upgrade to premium for download</a></li>
+          {% endif %}
+            <li><b>Annotated Log File</b>: <a href="{{url_for('annotation_log', id=job['job_id'])}}">View</a></li>
+        </ul>
+       {% endif %}
+      </div>
+    </div>   
+
+    <hr>
+      <div class="row">
+      <div class="col-md-12">
+          <p><a href="{{url_for('annotations_list')}}">&larr; Back to annotations list</a></p>
+      </div>
+    </div>
+  </div> <!-- container -->
+{% endblock %}

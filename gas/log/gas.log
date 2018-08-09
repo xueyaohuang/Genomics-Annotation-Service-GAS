@@ -1,0 +1,2767 @@
+[2018-05-18 16:13:19 -0500] [2300] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  chdir: /home/ubuntu/gas
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f921ad8fa60>
+  on_reload: <function OnReload.on_reload at 0x7f921ad8fbf8>
+  when_ready: <function WhenReady.when_ready at 0x7f921ad8fd90>
+  pre_fork: <function Prefork.pre_fork at 0x7f921ad8ff28>
+  post_fork: <function Postfork.post_fork at 0x7f921ad98158>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f921ad982f0>
+  worker_int: <function WorkerInt.worker_int at 0x7f921ad98488>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f921ad98620>
+  pre_exec: <function PreExec.pre_exec at 0x7f921ad987b8>
+  pre_request: <function PreRequest.pre_request at 0x7f921ad98950>
+  post_request: <function PostRequest.post_request at 0x7f921ad98a60>
+  child_exit: <function ChildExit.child_exit at 0x7f921ad98bf8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f921ad98d90>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f921ad98f28>
+  on_exit: <function OnExit.on_exit at 0x7f921ad9d158>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2018-05-18 16:13:19 -0500] [2300] [INFO] Starting gunicorn 19.7.1
+[2018-05-18 16:13:19 -0500] [2300] [DEBUG] Arbiter booted
+[2018-05-18 16:13:19 -0500] [2300] [INFO] Listening at: https://0.0.0.0:4433 (2300)
+[2018-05-18 16:13:19 -0500] [2300] [INFO] Using worker: sync
+[2018-05-18 16:13:19 -0500] [2303] [INFO] Booting worker with pid: 2303
+[2018-05-18 16:13:19 -0500] [2304] [INFO] Booting worker with pid: 2304
+[2018-05-18 16:13:19 -0500] [2305] [INFO] Booting worker with pid: 2305
+[2018-05-18 16:13:19 -0500] [2307] [INFO] Booting worker with pid: 2307
+[2018-05-18 16:13:19 -0500] [2300] [DEBUG] 4 workers
+[2018-05-18 16:13:53 -0500] [2303] [DEBUG] Error processing SSL request.
+[2018-05-18 16:13:53 -0500] [2303] [DEBUG] Invalid request from ip=128.135.98.176: [SSL: HTTP_REQUEST] http request (_ssl.c:2217)
+[2018-05-18 16:13:53 -0500] [2303] [DEBUG] Failed to send error message.
+[2018-05-18 16:13:54 -0500] [2305] [DEBUG] Error processing SSL request.
+[2018-05-18 16:13:54 -0500] [2305] [DEBUG] Invalid request from ip=128.135.98.176: [SSL: HTTP_REQUEST] http request (_ssl.c:2217)
+[2018-05-18 16:13:54 -0500] [2305] [DEBUG] Failed to send error message.
+[2018-05-18 16:13:54 -0500] [2304] [DEBUG] Error processing SSL request.
+[2018-05-18 16:13:54 -0500] [2304] [DEBUG] Invalid request from ip=128.135.98.176: [SSL: HTTP_REQUEST] http request (_ssl.c:2217)
+[2018-05-18 16:13:54 -0500] [2304] [DEBUG] Failed to send error message.
+[2018-05-18 16:13:54 -0500] [2303] [DEBUG] Error processing SSL request.
+[2018-05-18 16:13:54 -0500] [2303] [DEBUG] Invalid request from ip=128.135.98.176: [SSL: HTTP_REQUEST] http request (_ssl.c:2217)
+[2018-05-18 16:13:54 -0500] [2303] [DEBUG] Failed to send error message.
+[2018-05-18 16:13:59 -0500] [2307] [DEBUG] Error processing SSL request.
+[2018-05-18 16:13:59 -0500] [2307] [DEBUG] Invalid request from ip=128.135.98.176: [SSL: HTTP_REQUEST] http request (_ssl.c:2217)
+[2018-05-18 16:13:59 -0500] [2307] [DEBUG] Failed to send error message.
+[2018-05-18 16:14:10 -0500] [2307] [DEBUG] Error processing SSL request.
+[2018-05-18 16:14:10 -0500] [2307] [DEBUG] Invalid request from ip=128.135.98.176: [SSL: SSL_HANDSHAKE_FAILURE] ssl handshake failure (_ssl.c:2217)
+[2018-05-18 16:14:10 -0500] [2307] [DEBUG] Failed to send error message.
+[2018-05-18 16:14:20 -0500] [2304] [DEBUG] GET /
+[2018-05-18 16:14:21 -0500] [2305] [DEBUG] GET /static/css/bootstrap.min.css
+[2018-05-18 16:14:22 -0500] [2307] [DEBUG] GET /static/css/style.css
+[2018-05-18 16:14:22 -0500] [2303] [DEBUG] GET /static/js/jquery.min.js
+[2018-05-18 16:14:22 -0500] [2304] [DEBUG] GET /static/js/parsley.min.js
+[2018-05-18 16:14:22 -0500] [2305] [DEBUG] GET /static/js/bootstrap.min.js
+[2018-05-18 16:14:23 -0500] [2307] [DEBUG] GET /static/img/home-bg.jpg
+[2018-05-18 16:14:24 -0500] [2303] [DEBUG] GET /static/img/favicon.ico
+[2018-05-18 16:15:13 -0500] [2307] [DEBUG] GET /login
+[2018-05-18 16:15:13 -0500] [2307] [INFO] Login attempted from IP 128.135.98.176
+2018-05-18 16:15:13,292 INFO: Login attempted from IP 128.135.98.176 
+[2018-05-18 16:15:13 -0500] [2303] [DEBUG] GET /authcallback
+[2018-05-18 16:15:49 -0500] [2305] [DEBUG] GET /authcallback
+[2018-05-18 16:15:49 -0500] [2303] [DEBUG] GET /profile
+[2018-05-18 16:15:49 -0500] [2304] [DEBUG] GET /profile
+[2018-05-18 16:15:50 -0500] [2307] [DEBUG] GET /static/css/bootstrap.min.css
+[2018-05-18 16:15:50 -0500] [2305] [DEBUG] GET /static/js/jquery.min.js
+[2018-05-18 16:15:50 -0500] [2303] [DEBUG] GET /static/js/bootstrap.min.js
+[2018-05-18 16:15:50 -0500] [2303] [DEBUG] GET /static/js/parsley.min.js
+[2018-05-18 16:15:50 -0500] [2305] [DEBUG] GET /static/img/menu-bg.jpg
+[2018-05-18 16:16:02 -0500] [2307] [DEBUG] POST /profile
+[2018-05-18 16:16:03 -0500] [2305] [DEBUG] GET /profile
+[2018-05-18 16:16:03 -0500] [2307] [DEBUG] GET /static/css/bootstrap.min.css
+[2018-05-18 16:16:08 -0500] [2303] [DEBUG] GET /annotations
+[2018-05-18 16:16:08 -0500] [2304] [DEBUG] GET /static/css/bootstrap.min.css
+[2018-05-18 16:24:10 -0500] [2300] [INFO] Handling signal: int
+[2018-05-18 16:24:10 -0500] [2303] [INFO] Worker exiting (pid: 2303)
+2018-05-18 16:24:10,267 INFO: Worker exiting (pid: 2303) 
+[2018-05-18 16:24:10 -0500] [2304] [INFO] Worker exiting (pid: 2304)
+2018-05-18 16:24:10,271 INFO: Worker exiting (pid: 2304) 
+[2018-05-18 16:24:10 -0500] [2305] [INFO] Worker exiting (pid: 2305)
+2018-05-18 16:24:10,275 INFO: Worker exiting (pid: 2305) 
+[2018-05-18 16:24:10 -0500] [2307] [INFO] Worker exiting (pid: 2307)
+2018-05-18 16:24:10,279 INFO: Worker exiting (pid: 2307) 
+[2018-05-18 16:24:10 -0500] [2300] [INFO] Shutting down: Master
+2018-05-18 16:26:36,904 ERROR: Exception on /subscribe [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-18 16:27:10,888 INFO: Worker exiting (pid: 2326) 
+2018-05-18 16:27:10,888 INFO: Worker exiting (pid: 2327) 
+2018-05-18 16:27:10,889 INFO: Worker exiting (pid: 2324) 
+2018-05-19 17:04:50,222 INFO: Worker exiting (pid: 18372) 
+2018-05-19 17:04:50,222 INFO: Worker exiting (pid: 18370) 
+2018-05-19 17:04:50,221 INFO: Worker exiting (pid: 18367) 
+2018-05-19 17:04:50,221 INFO: Worker exiting (pid: 18369) 
+2018-05-20 14:40:07,843 INFO: Worker exiting (pid: 19856) 
+2018-05-20 14:40:07,844 INFO: Worker exiting (pid: 19859) 
+2018-05-20 14:40:07,844 INFO: Worker exiting (pid: 19858) 
+2018-05-20 14:40:07,842 INFO: Worker exiting (pid: 19855) 
+[2018-05-26 18:40:29 -0500] [30883] [DEBUG] Current configuration:
+  config: None
+  bind: ['0.0.0.0:4433']
+  backlog: 2048
+  workers: 4
+  worker_class: sync
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: False
+  reload_engine: auto
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  chdir: /home/ubuntu/gas
+  daemon: False
+  raw_env: []
+  pidfile: None
+  worker_tmp_dir: None
+  user: 1000
+  group: 1000
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: /home/ubuntu/gas/log/gas.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: gas:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7fbc3fe32a60>
+  on_reload: <function OnReload.on_reload at 0x7fbc3fe32bf8>
+  when_ready: <function WhenReady.when_ready at 0x7fbc3fe32d90>
+  pre_fork: <function Prefork.pre_fork at 0x7fbc3fe32f28>
+  post_fork: <function Postfork.post_fork at 0x7fbc3fe3b158>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7fbc3fe3b2f0>
+  worker_int: <function WorkerInt.worker_int at 0x7fbc3fe3b488>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7fbc3fe3b620>
+  pre_exec: <function PreExec.pre_exec at 0x7fbc3fe3b7b8>
+  pre_request: <function PreRequest.pre_request at 0x7fbc3fe3b950>
+  post_request: <function PostRequest.post_request at 0x7fbc3fe3ba60>
+  child_exit: <function ChildExit.child_exit at 0x7fbc3fe3bbf8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7fbc3fe3bd90>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7fbc3fe3bf28>
+  on_exit: <function OnExit.on_exit at 0x7fbc3fe40158>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: /usr/local/src/ssl/ucmpcs.org.key
+  certfile: /usr/local/src/ssl/ucmpcs.org.crt
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: TLSv1
+  raw_paste_global_conf: []
+[2018-05-26 18:40:29 -0500] [30883] [INFO] Starting gunicorn 19.7.1
+[2018-05-26 18:40:29 -0500] [30883] [DEBUG] Arbiter booted
+[2018-05-26 18:40:29 -0500] [30883] [INFO] Listening at: https://0.0.0.0:4433 (30883)
+[2018-05-26 18:40:29 -0500] [30883] [INFO] Using worker: sync
+[2018-05-26 18:40:29 -0500] [30886] [INFO] Booting worker with pid: 30886
+[2018-05-26 18:40:29 -0500] [30887] [INFO] Booting worker with pid: 30887
+[2018-05-26 18:40:29 -0500] [30888] [INFO] Booting worker with pid: 30888
+[2018-05-26 18:40:29 -0500] [30890] [INFO] Booting worker with pid: 30890
+[2018-05-26 18:40:29 -0500] [30883] [DEBUG] 4 workers
+[2018-05-26 18:40:32 -0500] [30883] [INFO] Handling signal: int
+[2018-05-26 18:40:32 -0500] [30886] [INFO] Worker exiting (pid: 30886)
+2018-05-26 18:40:32,668 INFO: Worker exiting (pid: 30886) 
+[2018-05-26 18:40:32 -0500] [30887] [INFO] Worker exiting (pid: 30887)
+2018-05-26 18:40:32,671 INFO: Worker exiting (pid: 30887) 
+[2018-05-26 18:40:32 -0500] [30888] [INFO] Worker exiting (pid: 30888)
+2018-05-26 18:40:32,675 INFO: Worker exiting (pid: 30888) 
+[2018-05-26 18:40:33 -0500] [30883] [INFO] Shutting down: Master
+2018-05-26 20:41:27,267 INFO: Login attempted from IP 128.135.98.12 
+2018-05-26 20:41:28,217 INFO: Successful login by Xueyao Huang (Globus identity: 0c7871b1-a6ed-418b-b0b2-709b94e0d5cc) 
+2018-05-26 20:41:28,373 ERROR: Exception on /subscribe [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-26 20:41:40,380 INFO: Login attempted from IP 128.135.98.12 
+2018-05-26 20:41:41,039 INFO: Successful login by Xueyao Huang (Globus identity: 0c7871b1-a6ed-418b-b0b2-709b94e0d5cc) 
+2018-05-26 20:42:35,522 ERROR: Exception on /annotate/job [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 87, in create_annotation_job_request
+    if not bucket or not key:
+NameError: name 'bucket' is not defined
+2018-05-26 20:43:05,650 INFO: Worker exiting (pid: 30904) 
+2018-05-26 20:43:05,651 INFO: Worker exiting (pid: 30906) 
+2018-05-26 20:53:36,275 ERROR: Exception on /annotate/job [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 87, in create_annotation_job_request
+    if not bucket or not key:
+NameError: name 'bucket' is not defined
+2018-05-26 20:54:07,158 INFO: Worker exiting (pid: 30905) 
+2018-05-26 20:54:07,164 INFO: Worker exiting (pid: 31246) 
+2018-05-26 20:54:19,287 ERROR: Exception on /annotate/job [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 87, in create_annotation_job_request
+    if not bucket or not key:
+NameError: name 'bucket' is not defined
+2018-05-26 20:54:49,581 INFO: Worker exiting (pid: 30902) 
+2018-05-26 20:58:21,871 INFO: Worker exiting (pid: 31245) 
+2018-05-26 20:58:21,872 INFO: Worker exiting (pid: 31284) 
+2018-05-26 20:58:21,872 INFO: Worker exiting (pid: 31290) 
+2018-05-26 20:58:21,870 INFO: Worker exiting (pid: 31285) 
+2018-05-26 20:58:44,634 ERROR: Exception on /annotations/f44d3f63-90f7-4e74-996e-b2b144d80e03 [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-26 20:59:21,566 ERROR: Exception on /annotations/2f7e1391-543e-45bb-808e-ddc49ac1e9ac [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-26 21:00:20,762 ERROR: Exception on /annotations/8a6ac338-59f5-4858-8cd8-e502f06f1379 [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-26 21:31:52,194 INFO: Worker exiting (pid: 31335) 
+2018-05-26 21:31:52,194 INFO: Worker exiting (pid: 31337) 
+2018-05-26 21:31:52,195 INFO: Worker exiting (pid: 31338) 
+2018-05-26 21:31:52,194 INFO: Worker exiting (pid: 31334) 
+2018-05-26 21:31:56,943 ERROR: unindent does not match any outer indentation level (views.py, line 132) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 132
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+                                                                                   ^
+IndentationError: unindent does not match any outer indentation level
+2018-05-26 21:31:56,965 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 132
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+                                                                                   ^
+IndentationError: unindent does not match any outer indentation level
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-26 21:31:56,968 INFO: Worker exiting (pid: 31505) 
+2018-05-26 21:31:57,049 ERROR: unindent does not match any outer indentation level (views.py, line 132) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 132
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+                                                                                   ^
+IndentationError: unindent does not match any outer indentation level
+2018-05-26 21:31:57,062 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 132
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+                                                                                   ^
+IndentationError: unindent does not match any outer indentation level
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-26 21:31:57,066 INFO: Worker exiting (pid: 31506) 
+2018-05-26 21:31:57,198 ERROR: unindent does not match any outer indentation level (views.py, line 132) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 132
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+                                                                                   ^
+IndentationError: unindent does not match any outer indentation level
+2018-05-26 21:31:57,214 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 132
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+                                                                                   ^
+IndentationError: unindent does not match any outer indentation level
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-26 21:31:57,218 INFO: Worker exiting (pid: 31507) 
+2018-05-26 21:31:57,271 ERROR: unindent does not match any outer indentation level (views.py, line 132) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 132
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+                                                                                   ^
+IndentationError: unindent does not match any outer indentation level
+2018-05-26 21:31:57,275 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 132
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+                                                                                   ^
+IndentationError: unindent does not match any outer indentation level
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-26 21:31:57,279 INFO: Worker exiting (pid: 31510) 
+2018-05-26 21:33:01,223 INFO: Worker exiting (pid: 31522) 
+2018-05-26 21:33:01,222 INFO: Worker exiting (pid: 31524) 
+2018-05-26 21:33:01,223 INFO: Worker exiting (pid: 31525) 
+2018-05-26 21:55:22,682 INFO: Worker exiting (pid: 31550) 
+2018-05-26 21:55:22,683 INFO: Worker exiting (pid: 31554) 
+2018-05-26 21:55:22,682 INFO: Worker exiting (pid: 31552) 
+2018-05-26 21:55:22,681 INFO: Worker exiting (pid: 31553) 
+2018-05-26 21:55:32,793 INFO: Worker exiting (pid: 31574) 
+2018-05-26 21:55:32,792 INFO: Worker exiting (pid: 31577) 
+2018-05-26 21:55:32,791 INFO: Worker exiting (pid: 31576) 
+2018-05-26 21:56:13,173 ERROR: Exception on /annotations [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 138, in annotations_list
+    return render_template('annotations.html', annotations=jobs['Items'])
+NameError: name 'jobs' is not defined
+2018-05-26 21:56:57,371 ERROR: Exception on /annotations [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 138, in annotations_list
+    return render_template('annotations.html', annotations=all_jobs['Items'])
+NameError: name 'jobs' is not defined
+2018-05-26 21:57:01,683 ERROR: Exception on /annotations [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 138, in annotations_list
+    return render_template('annotations.html', annotations=all_jobs['Items'])
+NameError: name 'jobs' is not defined
+2018-05-26 21:57:06,828 INFO: Worker exiting (pid: 31594) 
+2018-05-26 21:57:06,831 INFO: Worker exiting (pid: 31592) 
+2018-05-26 22:08:53,618 INFO: Worker exiting (pid: 31612) 
+2018-05-26 22:08:53,619 INFO: Worker exiting (pid: 31613) 
+2018-05-26 22:08:53,619 INFO: Worker exiting (pid: 31611) 
+2018-05-26 22:08:53,617 INFO: Worker exiting (pid: 31615) 
+2018-05-26 22:09:23,810 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-26 22:09:43,228 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 14:26:08,511 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 14:38:40,634 INFO: Worker exiting (pid: 31649) 
+2018-05-27 14:38:40,635 INFO: Worker exiting (pid: 31651) 
+2018-05-27 14:38:40,635 INFO: Worker exiting (pid: 31653) 
+2018-05-27 14:38:40,635 INFO: Worker exiting (pid: 31650) 
+2018-05-27 14:38:48,425 ERROR: expected an indented block (views.py, line 153) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 153
+    """Display the log file for an annotation job
+"""
+                                                 
+  ^
+IndentationError: expected an indented block
+2018-05-27 14:38:48,429 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 153
+    """Display the log file for an annotation job
+"""
+                                                 
+  ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-27 14:38:48,434 INFO: Worker exiting (pid: 940) 
+2018-05-27 14:38:48,484 ERROR: expected an indented block (views.py, line 153) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 153
+    """Display the log file for an annotation job
+"""
+                                                 
+  ^
+IndentationError: expected an indented block
+2018-05-27 14:38:48,497 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 153
+    """Display the log file for an annotation job
+"""
+                                                 
+  ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-27 14:38:48,502 INFO: Worker exiting (pid: 941) 
+2018-05-27 14:38:48,670 ERROR: expected an indented block (views.py, line 153) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 153
+    """Display the log file for an annotation job
+"""
+                                                 
+  ^
+IndentationError: expected an indented block
+2018-05-27 14:38:48,678 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 153
+    """Display the log file for an annotation job
+"""
+                                                 
+  ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-27 14:38:48,682 INFO: Worker exiting (pid: 943) 
+2018-05-27 14:38:48,675 ERROR: expected an indented block (views.py, line 153) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 153
+    """Display the log file for an annotation job
+"""
+                                                 
+  ^
+IndentationError: expected an indented block
+2018-05-27 14:38:48,689 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 153
+    """Display the log file for an annotation job
+"""
+                                                 
+  ^
+IndentationError: expected an indented block
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-27 14:38:48,692 INFO: Worker exiting (pid: 944) 
+2018-05-27 15:38:51,485 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:39:32,042 INFO: Worker exiting (pid: 959) 
+2018-05-27 15:39:32,042 INFO: Worker exiting (pid: 960) 
+2018-05-27 15:39:32,043 INFO: Worker exiting (pid: 958) 
+2018-05-27 15:39:32,041 INFO: Worker exiting (pid: 956) 
+2018-05-27 15:39:39,489 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:39:43,945 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:42:17,210 INFO: Worker exiting (pid: 1407) 
+2018-05-27 15:42:17,211 INFO: Worker exiting (pid: 1404) 
+2018-05-27 15:42:17,210 INFO: Worker exiting (pid: 1409) 
+2018-05-27 15:42:17,209 INFO: Worker exiting (pid: 1405) 
+2018-05-27 15:42:40,524 ERROR: Exception on /subscribe [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:42:47,092 ERROR: Exception on /annotations/7a7b07ab-0800-427b-991c-7ac138d15bcc [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:45:25,170 INFO: Worker exiting (pid: 1442) 
+2018-05-27 15:45:25,172 INFO: Worker exiting (pid: 1440) 
+2018-05-27 15:45:25,171 INFO: Worker exiting (pid: 1441) 
+2018-05-27 15:45:25,172 INFO: Worker exiting (pid: 1444) 
+2018-05-27 15:45:33,077 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:45:47,057 ERROR: Exception on /annotations/f44d3f63-90f7-4e74-996e-b2b144d80e03 [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:45:51,042 ERROR: Exception on /annotations/7a7b07ab-0800-427b-991c-7ac138d15bcc [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:45:53,705 ERROR: Exception on /annotations/2f7e1391-543e-45bb-808e-ddc49ac1e9ac [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:45:56,217 ERROR: Exception on /annotations/8a6ac338-59f5-4858-8cd8-e502f06f1379 [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:45:59,082 ERROR: Exception on /annotations/2f7e1391-543e-45bb-808e-ddc49ac1e9ac [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:47:18,912 INFO: Worker exiting (pid: 1468) 
+2018-05-27 15:47:18,913 INFO: Worker exiting (pid: 1471) 
+2018-05-27 15:47:18,913 INFO: Worker exiting (pid: 1469) 
+2018-05-27 15:47:18,914 INFO: Worker exiting (pid: 1472) 
+2018-05-27 15:47:27,110 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:51:59,446 INFO: Worker exiting (pid: 1495) 
+2018-05-27 15:51:59,445 INFO: Worker exiting (pid: 1492) 
+2018-05-27 15:51:59,444 INFO: Worker exiting (pid: 1494) 
+2018-05-27 15:51:59,447 INFO: Worker exiting (pid: 1496) 
+2018-05-27 15:52:10,880 ERROR: invalid syntax (views.py, line 148) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+2018-05-27 15:52:10,886 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-27 15:52:10,894 INFO: Worker exiting (pid: 1524) 
+2018-05-27 15:52:11,075 ERROR: invalid syntax (views.py, line 148) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+2018-05-27 15:52:11,094 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-27 15:52:11,098 INFO: Worker exiting (pid: 1525) 
+2018-05-27 15:52:11,190 ERROR: invalid syntax (views.py, line 148) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+2018-05-27 15:52:11,198 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-27 15:52:11,202 INFO: Worker exiting (pid: 1527) 
+2018-05-27 15:52:11,282 ERROR: invalid syntax (views.py, line 148) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+2018-05-27 15:52:11,290 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-27 15:52:11,295 INFO: Worker exiting (pid: 1528) 
+2018-05-27 15:52:38,514 ERROR: invalid syntax (views.py, line 148) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+2018-05-27 15:52:38,530 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-27 15:52:38,534 INFO: Worker exiting (pid: 1537) 
+2018-05-27 15:52:38,576 ERROR: invalid syntax (views.py, line 148) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+2018-05-27 15:52:38,586 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-27 15:52:38,591 INFO: Worker exiting (pid: 1538) 
+2018-05-27 15:52:38,761 ERROR: invalid syntax (views.py, line 148) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+2018-05-27 15:52:38,778 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-27 15:52:38,782 INFO: Worker exiting (pid: 1539) 
+2018-05-27 15:52:38,812 ERROR: invalid syntax (views.py, line 148) 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+2018-05-27 15:52:38,815 ERROR: Exception in worker process 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 135, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 65, in load
+    return self.load_wsgiapp()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/app/wsgiapp.py", line 52, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/util.py", line 352, in import_app
+    __import__(module)
+  File "/home/ubuntu/gas/gas.py", line 48, in <module>
+    import views
+  File "/home/ubuntu/gas/views.py", line 148
+    dynamodb = boto3.resource('dynamodb', region_name=app.config['AWS_REGION_NAME'])
+           ^
+SyntaxError: invalid syntax
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/arbiter.py", line 578, in spawn_worker
+    worker.init_process()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 126, in init_process
+    self.load_wsgi()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/gunicorn/workers/base.py", line 148, in load_wsgi
+    self.reloader.add_extra_file(exc_val.filename)
+AttributeError: 'NoneType' object has no attribute 'add_extra_file'
+2018-05-27 15:52:38,819 INFO: Worker exiting (pid: 1542) 
+2018-05-27 15:55:07,950 INFO: Worker exiting (pid: 1555) 
+2018-05-27 15:55:07,952 INFO: Worker exiting (pid: 1556) 
+2018-05-27 15:55:07,951 INFO: Worker exiting (pid: 1558) 
+2018-05-27 15:55:07,951 INFO: Worker exiting (pid: 1553) 
+2018-05-27 15:55:18,312 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 15:58:44,021 INFO: Worker exiting (pid: 1588) 
+2018-05-27 15:58:44,023 INFO: Worker exiting (pid: 1585) 
+2018-05-27 15:58:44,022 INFO: Worker exiting (pid: 1586) 
+2018-05-27 15:58:44,023 INFO: Worker exiting (pid: 1590) 
+2018-05-27 15:58:52,484 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 153, in annotation_details
+    job = all_jobs['Item'][0]
+KeyError: 'Item'
+2018-05-27 16:01:28,429 INFO: Worker exiting (pid: 1610) 
+2018-05-27 16:01:28,429 INFO: Worker exiting (pid: 1606) 
+2018-05-27 16:01:28,428 INFO: Worker exiting (pid: 1605) 
+2018-05-27 16:01:28,430 INFO: Worker exiting (pid: 1608) 
+2018-05-27 16:03:06,006 INFO: Worker exiting (pid: 1628) 
+2018-05-27 16:03:06,007 INFO: Worker exiting (pid: 1629) 
+2018-05-27 16:03:06,006 INFO: Worker exiting (pid: 1627) 
+2018-05-27 16:07:45,450 INFO: Worker exiting (pid: 1652) 
+2018-05-27 16:07:45,451 INFO: Worker exiting (pid: 1651) 
+2018-05-27 16:07:45,452 INFO: Worker exiting (pid: 1654) 
+2018-05-27 16:07:45,450 INFO: Worker exiting (pid: 1649) 
+2018-05-27 16:07:54,774 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 175, in annotation_details
+    return render_template('display_job.html', job=job, input_ann=input_ann, result_ann=result_ann)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/gas/templates/display_job.html", line 70, in template
+    {% endblock %}
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 213, in parse_if
+    'name:endif'))
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2018-05-27 16:08:46,492 INFO: Worker exiting (pid: 1674) 
+2018-05-27 16:08:46,494 INFO: Worker exiting (pid: 1673) 
+2018-05-27 16:08:46,493 INFO: Worker exiting (pid: 1675) 
+2018-05-27 16:08:46,494 INFO: Worker exiting (pid: 1677) 
+2018-05-27 16:08:53,336 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 175, in annotation_details
+    return render_template('display_job.html', job=job, input_ann=input_ann, result_ann=result_ann)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/gas/templates/display_job.html", line 61, in template
+    {% endblock %}
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 213, in parse_if
+    'name:endif'))
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 144, in parse_statement
+    self.fail_unknown_tag(token.value, token.lineno)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 97, in fail_unknown_tag
+    return self._fail_ut_eof(name, self._end_token_stack, lineno)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 90, in _fail_ut_eof
+    self.fail(' '.join(message), lineno)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: Encountered unknown tag 'endblock'. You probably made a nesting mistake. Jinja is expecting this tag, but currently looking for 'elif' or 'else' or 'endif'. The innermost block that needs to be closed is 'if'.
+2018-05-27 16:09:22,660 INFO: Worker exiting (pid: 1696) 
+2018-05-27 16:09:22,661 INFO: Worker exiting (pid: 1697) 
+2018-05-27 16:09:22,660 INFO: Worker exiting (pid: 1695) 
+2018-05-27 16:09:22,659 INFO: Worker exiting (pid: 1693) 
+2018-05-27 16:33:18,398 INFO: Worker exiting (pid: 1713) 
+2018-05-27 16:33:18,399 INFO: Worker exiting (pid: 1717) 
+2018-05-27 16:33:18,398 INFO: Worker exiting (pid: 1714) 
+2018-05-27 16:33:18,400 INFO: Worker exiting (pid: 1716) 
+2018-05-27 16:33:36,755 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff/log [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 16:35:15,169 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff/log [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 16:57:57,616 INFO: Worker exiting (pid: 1770) 
+2018-05-27 16:57:57,617 INFO: Worker exiting (pid: 1773) 
+2018-05-27 16:57:57,616 INFO: Worker exiting (pid: 1771) 
+2018-05-27 16:57:57,615 INFO: Worker exiting (pid: 1769) 
+2018-05-27 17:00:04,400 INFO: Worker exiting (pid: 1843) 
+2018-05-27 17:00:04,403 INFO: Worker exiting (pid: 1841) 
+2018-05-27 17:00:14,311 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff/log [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 198, in annotation_log
+    return render_template('log.html', log=log)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/gas/templates/log.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/ubuntu/gas/templates/base.html", line 73, in top-level template code
+    {% block body %}{% endblock %}
+  File "/home/ubuntu/gas/templates/log.html", line 24, in block "body"
+    <p><a href="{{url_for('annotations_details')}}">&larr; Back to annotations details</a></p>
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'annotations_details'. Did you mean 'annotation_details' instead?
+2018-05-27 17:00:34,924 INFO: Worker exiting (pid: 1864) 
+2018-05-27 17:00:34,925 INFO: Worker exiting (pid: 1867) 
+2018-05-27 17:00:34,925 INFO: Worker exiting (pid: 1863) 
+2018-05-27 17:00:34,923 INFO: Worker exiting (pid: 1865) 
+2018-05-27 17:00:40,540 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff/log [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 198, in annotation_log
+    return render_template('log.html', log=log)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/gas/templates/log.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/ubuntu/gas/templates/base.html", line 73, in top-level template code
+    {% block body %}{% endblock %}
+  File "/home/ubuntu/gas/templates/log.html", line 24, in block "body"
+    <p><a href="{{url_for('annotation_details')}}">&larr; Back to annotations details</a></p>
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'annotation_details'. Did you forget to specify values ['id']?
+2018-05-27 17:00:49,831 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff/log [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 198, in annotation_log
+    return render_template('log.html', log=log)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/gas/templates/log.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/ubuntu/gas/templates/base.html", line 73, in top-level template code
+    {% block body %}{% endblock %}
+  File "/home/ubuntu/gas/templates/log.html", line 24, in block "body"
+    <p><a href="{{url_for('annotation_details')}}">&larr; Back to annotations details</a></p>
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'annotation_details'. Did you forget to specify values ['id']?
+2018-05-27 17:02:08,563 ERROR: Exception on /annotations/cae047f8-5bd8-4d9d-bf87-6dbdbba354ff/log [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 198, in annotation_log
+    return render_template('log.html', log=log)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/templating.py", line 134, in render_template
+    context, ctx.app)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/templating.py", line 116, in _render
+    rv = template.render(context)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/gas/templates/log.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/home/ubuntu/gas/templates/base.html", line 73, in top-level template code
+    {% block body %}{% endblock %}
+  File "/home/ubuntu/gas/templates/log.html", line 24, in block "body"
+    <p><a href="{{url_for('annotations_list')}}">&larr; Back to annotations list</a></p>
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/helpers.py", line 333, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1805, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/helpers.py", line 323, in url_for
+    force_external=external)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/werkzeug/routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'annotation_details'. Did you forget to specify values ['id']?
+2018-05-27 17:02:12,823 INFO: Worker exiting (pid: 1886) 
+2018-05-27 17:03:19,932 INFO: Worker exiting (pid: 1916) 
+2018-05-27 17:03:19,933 INFO: Worker exiting (pid: 1914) 
+2018-05-27 17:03:19,932 INFO: Worker exiting (pid: 1915) 
+2018-05-27 17:03:19,933 INFO: Worker exiting (pid: 1918) 
+2018-05-27 17:09:44,300 INFO: Worker exiting (pid: 1942) 
+2018-05-27 17:09:44,302 INFO: Worker exiting (pid: 1941) 
+2018-05-27 17:09:44,302 INFO: Worker exiting (pid: 1939) 
+2018-05-27 17:09:44,301 INFO: Worker exiting (pid: 1938) 
+2018-05-27 17:42:25,953 INFO: Worker exiting (pid: 1968) 
+2018-05-27 17:42:25,952 INFO: Worker exiting (pid: 1969) 
+2018-05-27 17:42:25,952 INFO: Worker exiting (pid: 1966) 
+2018-05-27 17:42:25,953 INFO: Worker exiting (pid: 1970) 
+2018-05-27 17:43:02,139 ERROR: Exception on /annotations/b26f3a26-25c7-4bed-9fbd-b2ef4b93d1b2/log [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-27 17:43:51,743 INFO: Worker exiting (pid: 2070) 
+2018-05-27 17:43:51,747 INFO: Worker exiting (pid: 2068) 
+2018-05-27 18:48:04,718 INFO: Worker exiting (pid: 2086) 
+2018-05-27 18:48:04,719 INFO: Worker exiting (pid: 2087) 
+2018-05-27 18:48:04,720 INFO: Worker exiting (pid: 2090) 
+2018-05-27 18:48:04,719 INFO: Worker exiting (pid: 2089) 
+2018-05-27 18:55:16,235 INFO: Worker exiting (pid: 2231) 
+2018-05-27 18:55:16,234 INFO: Worker exiting (pid: 2227) 
+2018-05-27 18:55:16,234 INFO: Worker exiting (pid: 2229) 
+2018-05-27 18:55:16,233 INFO: Worker exiting (pid: 2230) 
+2018-05-27 18:58:14,044 INFO: Worker exiting (pid: 2366) 
+2018-05-27 18:58:14,045 INFO: Worker exiting (pid: 2364) 
+2018-05-27 18:58:14,045 INFO: Worker exiting (pid: 2368) 
+2018-05-27 18:58:14,044 INFO: Worker exiting (pid: 2367) 
+2018-05-27 19:07:35,623 INFO: Worker exiting (pid: 2380) 
+2018-05-27 19:07:35,624 INFO: Worker exiting (pid: 2383) 
+2018-05-27 19:07:35,623 INFO: Worker exiting (pid: 2382) 
+2018-05-27 19:07:35,622 INFO: Worker exiting (pid: 2381) 
+2018-05-27 19:08:49,200 INFO: Worker exiting (pid: 2480) 
+2018-05-27 19:08:49,204 INFO: Worker exiting (pid: 2482) 
+2018-05-27 19:08:49,208 INFO: Worker exiting (pid: 2483) 
+2018-05-27 19:19:36,236 INFO: Worker exiting (pid: 2497) 
+2018-05-27 19:19:36,237 INFO: Worker exiting (pid: 2479) 
+2018-05-27 19:19:36,235 INFO: Worker exiting (pid: 2498) 
+2018-05-27 19:19:36,238 INFO: Worker exiting (pid: 2495) 
+2018-05-27 19:25:56,442 INFO: Worker exiting (pid: 2997) 
+2018-05-27 19:25:56,448 INFO: Worker exiting (pid: 2998) 
+2018-05-27 19:25:56,452 INFO: Worker exiting (pid: 3000) 
+2018-05-27 19:29:11,490 INFO: Worker exiting (pid: 3022) 
+2018-05-27 19:29:11,490 INFO: Worker exiting (pid: 3020) 
+2018-05-27 19:29:11,491 INFO: Worker exiting (pid: 3023) 
+2018-05-27 19:29:11,492 INFO: Worker exiting (pid: 2999) 
+2018-05-27 19:44:10,009 INFO: Worker exiting (pid: 3101) 
+2018-05-27 19:44:10,008 INFO: Worker exiting (pid: 3103) 
+2018-05-27 19:44:10,008 INFO: Worker exiting (pid: 3100) 
+2018-05-27 19:44:10,009 INFO: Worker exiting (pid: 3102) 
+2018-05-27 20:00:30,864 INFO: Worker exiting (pid: 3382) 
+2018-05-27 20:00:30,868 INFO: Worker exiting (pid: 3387) 
+2018-05-27 20:00:31,069 INFO: Worker exiting (pid: 3384) 
+2018-05-27 20:15:28,490 INFO: Worker exiting (pid: 3385) 
+2018-05-27 20:15:28,492 INFO: Worker exiting (pid: 3396) 
+2018-05-27 20:15:28,491 INFO: Worker exiting (pid: 3394) 
+2018-05-27 20:15:28,490 INFO: Worker exiting (pid: 3395) 
+2018-05-27 20:18:20,479 INFO: Worker exiting (pid: 3524) 
+2018-05-27 20:18:20,480 INFO: Worker exiting (pid: 3526) 
+2018-05-27 20:18:20,480 INFO: Worker exiting (pid: 3528) 
+2018-05-27 20:18:20,479 INFO: Worker exiting (pid: 3525) 
+2018-05-27 20:19:15,890 INFO: Worker exiting (pid: 3543) 
+2018-05-27 20:19:15,896 INFO: Worker exiting (pid: 3544) 
+2018-05-27 20:20:29,257 INFO: Worker exiting (pid: 3545) 
+2018-05-27 20:20:29,257 INFO: Worker exiting (pid: 3546) 
+2018-05-27 20:20:29,258 INFO: Worker exiting (pid: 3556) 
+2018-05-27 20:20:29,258 INFO: Worker exiting (pid: 3555) 
+2018-05-27 20:21:30,602 INFO: Worker exiting (pid: 3578) 
+2018-05-27 20:21:30,603 INFO: Worker exiting (pid: 3579) 
+2018-05-27 20:21:30,603 INFO: Worker exiting (pid: 3580) 
+2018-05-27 20:21:30,615 INFO: Worker exiting (pid: 3576) 
+2018-05-27 20:22:36,766 INFO: Worker exiting (pid: 3595) 
+2018-05-27 20:33:23,401 INFO: Worker exiting (pid: 3593) 
+2018-05-27 20:33:23,403 INFO: Worker exiting (pid: 3605) 
+2018-05-27 20:33:23,407 INFO: Worker exiting (pid: 3596) 
+2018-05-27 20:40:47,986 INFO: Worker exiting (pid: 3616) 
+2018-05-27 20:41:46,316 INFO: Worker exiting (pid: 3615) 
+2018-05-27 20:41:46,315 INFO: Worker exiting (pid: 3630) 
+2018-05-27 20:41:46,323 INFO: Worker exiting (pid: 3614) 
+2018-05-27 20:41:46,327 INFO: Worker exiting (pid: 3619) 
+2018-05-27 21:59:41,863 INFO: Login attempted from IP 128.135.98.164 
+2018-05-27 22:03:12,160 INFO: Worker exiting (pid: 3641) 
+2018-05-27 22:03:12,164 INFO: Worker exiting (pid: 3642) 
+2018-05-27 22:04:50,636 INFO: Worker exiting (pid: 3639) 
+2018-05-27 22:04:50,640 INFO: Worker exiting (pid: 3643) 
+2018-05-27 22:04:50,643 INFO: Worker exiting (pid: 3832) 
+2018-05-28 00:05:42,030 INFO: Worker exiting (pid: 3833) 
+2018-05-28 00:05:42,029 INFO: Worker exiting (pid: 3840) 
+2018-05-28 00:05:42,030 INFO: Worker exiting (pid: 3842) 
+2018-05-28 00:05:42,029 INFO: Worker exiting (pid: 3841) 
+2018-05-28 19:15:13,532 INFO: Worker exiting (pid: 4149) 
+2018-05-28 19:15:13,532 INFO: Worker exiting (pid: 4153) 
+2018-05-28 19:15:13,533 INFO: Worker exiting (pid: 4152) 
+2018-05-28 19:15:13,533 INFO: Worker exiting (pid: 4151) 
+2018-05-28 19:17:32,166 ERROR: Exception on /annotate/job [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 119, in create_annotation_job_request
+    user_type = get_profile(identity_id=user_id).role
+NameError: name 'user_id' is not defined
+2018-05-28 19:17:57,660 INFO: Worker exiting (pid: 6089) 
+2018-05-28 19:17:57,661 INFO: Worker exiting (pid: 6093) 
+2018-05-28 19:17:57,660 INFO: Worker exiting (pid: 6092) 
+2018-05-28 19:17:57,675 INFO: Worker exiting (pid: 6091) 
+2018-05-28 20:03:16,941 INFO: Worker exiting (pid: 6205) 
+2018-05-28 20:03:16,948 INFO: Worker exiting (pid: 6206) 
+2018-05-28 20:10:02,673 INFO: Worker exiting (pid: 6203) 
+2018-05-28 20:10:02,680 INFO: Worker exiting (pid: 6251) 
+2018-05-28 20:10:02,869 INFO: Worker exiting (pid: 6204) 
+2018-05-28 20:12:57,204 INFO: Worker exiting (pid: 6260) 
+2018-05-28 20:12:57,211 INFO: Worker exiting (pid: 6261) 
+2018-05-28 20:12:57,406 INFO: Worker exiting (pid: 6259) 
+2018-05-28 20:17:33,954 INFO: Worker exiting (pid: 6252) 
+2018-05-28 20:17:33,960 INFO: Worker exiting (pid: 6271) 
+2018-05-28 20:19:33,388 INFO: Worker exiting (pid: 6268) 
+2018-05-28 20:19:33,395 INFO: Worker exiting (pid: 6282) 
+2018-05-28 20:21:51,807 INFO: Worker exiting (pid: 6269) 
+2018-05-28 20:21:51,812 INFO: Worker exiting (pid: 6292) 
+2018-05-28 20:25:18,346 INFO: Worker exiting (pid: 6284) 
+2018-05-28 20:25:18,352 INFO: Worker exiting (pid: 6290) 
+2018-05-29 17:27:50,417 ERROR: Exception on /subscribe [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-29 17:28:47,710 INFO: Worker exiting (pid: 6311) 
+2018-05-29 17:28:47,710 INFO: Worker exiting (pid: 6319) 
+2018-05-29 17:28:47,710 INFO: Worker exiting (pid: 6320) 
+2018-05-29 17:28:47,709 INFO: Worker exiting (pid: 6312) 
+2018-05-29 17:31:29,375 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 232, in subscribe
+    source=stripe_token)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/stripe/api_resources/abstract/createable_api_resource.py", line 17, in create
+    response, api_key = requestor.request('post', url, params, headers)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/stripe/api_requestor.py", line 153, in request
+    resp = self.interpret_response(rbody, rcode, rheaders)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/stripe/api_requestor.py", line 365, in interpret_response
+    self.handle_error_response(rbody, rcode, resp.data, rheaders)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/stripe/api_requestor.py", line 178, in handle_error_response
+    raise err
+stripe.error.CardError: Request req_HcUN0QlyCdmPky: Your card was declined. Your request was in test mode, but used a non test card. For a list of valid test cards, visit: https://stripe.com/docs/testing.
+2018-05-29 17:32:57,919 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 238, in subscribe
+    "plan": app.config['SUBSCRIPTION_PLAN'],
+KeyError: 'SUBSCRIPTION_PLAN'
+2018-05-29 17:41:27,222 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 238, in subscribe
+    "plan": app.config['SUBSCRIPTION_PLAN'],
+KeyError: 'SUBSCRIPTION_PLAN'
+2018-05-29 17:41:36,521 INFO: Worker exiting (pid: 8724) 
+2018-05-29 17:41:36,522 INFO: Worker exiting (pid: 8727) 
+2018-05-29 17:41:36,523 INFO: Worker exiting (pid: 8726) 
+2018-05-29 17:41:54,991 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 238, in subscribe
+    "plan": app.config['SUBSCRIPTION_PLAN'],
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/stripe/api_resources/subscription.py", line 33, in create
+    return super(Subscription, cls).create(**params)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/stripe/api_resources/abstract/createable_api_resource.py", line 17, in create
+    response, api_key = requestor.request('post', url, params, headers)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/stripe/api_requestor.py", line 153, in request
+    resp = self.interpret_response(rbody, rcode, rheaders)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/stripe/api_requestor.py", line 365, in interpret_response
+    self.handle_error_response(rbody, rcode, resp.data, rheaders)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/stripe/api_requestor.py", line 178, in handle_error_response
+    raise err
+stripe.error.InvalidRequestError: Request req_Z5ph04enAccUIh: No such plan: prod_CwqnujkaWBHdOW
+2018-05-29 18:08:55,702 INFO: Worker exiting (pid: 8794) 
+2018-05-29 18:08:55,701 INFO: Worker exiting (pid: 8792) 
+2018-05-29 18:08:55,701 INFO: Worker exiting (pid: 8791) 
+2018-05-29 18:08:55,703 INFO: Worker exiting (pid: 8789) 
+2018-05-29 18:09:34,749 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 274, in subscribe
+    elif 'complete_time' in job and (time.time() - float(job['complete_time'])) / 60 <= AVAILABLE_TIME:
+NameError: name 'AVAILABLE_TIME' is not defined
+2018-05-29 19:41:16,567 INFO: Worker exiting (pid: 8840) 
+2018-05-29 19:41:16,567 INFO: Worker exiting (pid: 8843) 
+2018-05-29 19:41:16,568 INFO: Worker exiting (pid: 8844) 
+2018-05-29 19:41:16,566 INFO: Worker exiting (pid: 8842) 
+2018-05-29 19:43:01,526 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 268, in subscribe
+    'SNSTopic': app.config['AWS_SNS_ARCHIVE_RETRIEVAL'],
+KeyError: 'AWS_SNS_ARCHIVE_RETRIEVAL'
+2018-05-29 21:22:11,112 INFO: Worker exiting (pid: 9121) 
+2018-05-29 21:22:11,114 INFO: Worker exiting (pid: 9122) 
+2018-05-29 21:22:11,113 INFO: Worker exiting (pid: 9119) 
+2018-05-29 21:22:11,112 INFO: Worker exiting (pid: 9120) 
+2018-05-29 23:24:00,216 INFO: Worker exiting (pid: 9532) 
+2018-05-29 23:24:00,217 INFO: Worker exiting (pid: 9534) 
+2018-05-29 23:24:00,216 INFO: Worker exiting (pid: 9533) 
+2018-05-29 23:24:00,217 INFO: Worker exiting (pid: 9536) 
+2018-05-29 23:24:09,950 ERROR: Exception on /annotations/55144874-4a93-4edd-9365-3e47290b2769 [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 161, in annotation_details
+    user_profile = get_profile(identity_id=user_id)
+NameError: name 'user_id' is not defined
+2018-05-29 23:24:52,056 INFO: Worker exiting (pid: 9912) 
+2018-05-29 23:24:52,056 INFO: Worker exiting (pid: 9914) 
+2018-05-29 23:24:52,057 INFO: Worker exiting (pid: 9913) 
+2018-05-29 23:24:52,058 INFO: Worker exiting (pid: 9911) 
+2018-05-29 23:26:52,103 INFO: Worker exiting (pid: 9938) 
+2018-05-29 23:26:52,103 INFO: Worker exiting (pid: 9939) 
+2018-05-29 23:26:52,102 INFO: Worker exiting (pid: 9936) 
+2018-05-29 23:26:52,104 INFO: Worker exiting (pid: 9935) 
+2018-05-29 23:27:04,466 ERROR: Exception on /annotations/ffd5c6e4-cde2-4952-84af-f58cb12f5165 [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 208, in annotation_details
+    return render_template('display_job.html', job=job, download_status=download_status, input_ann=input_ann, result_ann=result_ann)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/templating.py", line 133, in render_template
+    return _render(ctx.app.jinja_env.get_or_select_template(template_name_or_list),
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 869, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 830, in get_template
+    return self._load_template(name, self.make_globals(globals))
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 804, in _load_template
+    template = self.loader.load(self, name, globals)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/loaders.py", line 125, in load
+    code = environment.compile(source, name, filename)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 591, in compile
+    self.handle_exception(exc_info, source_hint=source_hint)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ubuntu/gas/templates/display_job.html", line 41, in template
+    {% elif url_result_file == 'archived_to_glacier' % %}
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/environment.py", line 497, in _parse
+    return Parser(self, source, name, encode_filename(filename)).parse()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 901, in parse
+    result = nodes.Template(self.subparse(), lineno=1)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 268, in parse_block
+    node.body = self.parse_statements(('name:endblock',), drop_needle=True)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 213, in parse_if
+    'name:endif'))
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 165, in parse_statements
+    result = self.subparse(end_tokens)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 883, in subparse
+    rv = self.parse_statement()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 130, in parse_statement
+    return getattr(self, 'parse_' + self.stream.current.value)()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 211, in parse_if
+    node.test = self.parse_tuple(with_condexpr=False)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 620, in parse_tuple
+    args.append(parse())
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 612, in <lambda>
+    parse = lambda: self.parse_expression(with_condexpr=False)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 433, in parse_expression
+    return self.parse_or()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 450, in parse_or
+    left = self.parse_and()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 459, in parse_and
+    left = self.parse_not()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 470, in parse_not
+    return self.parse_compare()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 480, in parse_compare
+    ops.append(nodes.Operand(token_type, self.parse_math1()))
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 496, in parse_math1
+    left = self.parse_concat()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 507, in parse_concat
+    args = [self.parse_math2()]
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 521, in parse_math2
+    right = self.parse_pow()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 528, in parse_pow
+    left = self.parse_unary()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 546, in parse_unary
+    node = self.parse_primary()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 583, in parse_primary
+    self.fail("unexpected '%s'" % describe_token(token), token.lineno)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/jinja2/parser.py", line 59, in fail
+    raise exc(msg, lineno, self.name, self.filename)
+jinja2.exceptions.TemplateSyntaxError: unexpected 'end of statement block'
+2018-05-29 23:27:41,041 INFO: Worker exiting (pid: 9960) 
+2018-05-29 23:27:41,040 INFO: Worker exiting (pid: 9957) 
+2018-05-29 23:27:41,041 INFO: Worker exiting (pid: 9961) 
+2018-05-29 23:27:41,039 INFO: Worker exiting (pid: 9958) 
+2018-05-29 23:30:17,935 INFO: Xueyao Huang (0c7871b1-a6ed-418b-b0b2-709b94e0d5cc) logged out 
+2018-05-29 23:30:25,275 INFO: Login attempted from IP 128.135.98.164 
+2018-05-29 23:30:36,022 INFO: Successful login by Xueyao Huang (Globus identity: 0c7871b1-a6ed-418b-b0b2-709b94e0d5cc) 
+2018-05-30 13:47:57,678 INFO: Worker exiting (pid: 9979) 
+2018-05-30 13:47:57,677 INFO: Worker exiting (pid: 9978) 
+2018-05-30 13:47:57,679 INFO: Worker exiting (pid: 9981) 
+2018-05-30 13:47:57,678 INFO: Worker exiting (pid: 9977) 
+2018-05-30 13:48:46,468 ERROR: Exception on /annotations/f0afce6e-c2f5-4f87-aedf-1ac7836af38c [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 191, in annotation_details
+    if time.time() - complete_time > 40:
+TypeError: unsupported operand type(s) for -: 'float' and 'decimal.Decimal'
+2018-05-30 13:51:27,200 INFO: Worker exiting (pid: 11574) 
+2018-05-30 13:51:27,202 INFO: Worker exiting (pid: 11572) 
+2018-05-30 13:51:27,201 INFO: Worker exiting (pid: 11575) 
+2018-05-30 13:51:27,200 INFO: Worker exiting (pid: 11573) 
+2018-05-30 13:51:40,070 ERROR: Exception on /annotations/f104c61c-9ad2-49e2-ac8f-a66c1168f3fa [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 208, in annotation_details
+    return render_template('display_job.html', job=job, download_status=download_status, input_ann=input_ann, result_ann=result_ann)
+UnboundLocalError: local variable 'result_ann' referenced before assignment
+2018-05-30 13:57:12,040 INFO: Worker exiting (pid: 11599) 
+2018-05-30 13:57:12,039 INFO: Worker exiting (pid: 11598) 
+2018-05-30 13:57:12,041 INFO: Worker exiting (pid: 11600) 
+2018-05-30 13:57:12,041 INFO: Worker exiting (pid: 11596) 
+2018-05-30 13:58:18,389 INFO: Worker exiting (pid: 11657) 
+2018-05-30 13:58:18,390 INFO: Worker exiting (pid: 11658) 
+2018-05-30 13:58:18,391 INFO: Worker exiting (pid: 11654) 
+2018-05-30 13:58:18,391 INFO: Worker exiting (pid: 11656) 
+2018-05-30 14:02:24,742 INFO: Worker exiting (pid: 11685) 
+2018-05-30 14:02:24,742 INFO: Worker exiting (pid: 11680) 
+2018-05-30 14:02:24,743 INFO: Worker exiting (pid: 11683) 
+2018-05-30 14:02:24,743 INFO: Worker exiting (pid: 11682) 
+2018-05-30 14:28:47,764 ERROR: Exception on /annotate/job [GET] 
+Traceback (most recent call last):
+  File "/home/ubuntu/gas/views.py", line 106, in create_annotation_job_request
+    annotation_table.put_item(Item=data)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/boto3/resources/factory.py", line 520, in do_action
+    response = action(self, *args, **kwargs)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/boto3/resources/action.py", line 83, in __call__
+    response = getattr(parent.meta.client, operation_name)(**params)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ValidationException) when calling the PutItem operation: One or more parameter values were invalid: An AttributeValue may not contain an empty string
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 109, in create_annotation_job_request
+    return jsonify({'code': 500, 'error':'Cannot add data to s3 table'})
+NameError: name 'jsonify' is not defined
+2018-05-30 14:29:33,811 INFO: Worker exiting (pid: 11708) 
+2018-05-30 14:29:33,816 INFO: Worker exiting (pid: 11709) 
+2018-05-30 14:29:33,820 INFO: Worker exiting (pid: 11710) 
+2018-05-30 14:29:33,824 INFO: Worker exiting (pid: 11712) 
+2018-05-30 16:55:39,681 INFO: Worker exiting (pid: 11747) 
+2018-05-30 16:55:39,682 INFO: Worker exiting (pid: 11748) 
+2018-05-30 16:55:39,681 INFO: Worker exiting (pid: 11744) 
+2018-05-30 16:55:39,680 INFO: Worker exiting (pid: 11745) 
+2018-05-30 16:56:20,392 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 266, in subscribe
+    print(f'Archive retrieve successfully.\n {response}')
+NameError: name 'response' is not defined
+2018-05-30 17:01:27,816 INFO: Worker exiting (pid: 12124) 
+2018-05-30 17:01:27,815 INFO: Worker exiting (pid: 12123) 
+2018-05-30 17:01:27,815 INFO: Worker exiting (pid: 12125) 
+2018-05-30 17:01:27,816 INFO: Worker exiting (pid: 12122) 
+2018-05-30 17:02:12,920 INFO: Worker exiting (pid: 12147) 
+2018-05-30 17:02:12,924 INFO: Worker exiting (pid: 12146) 
+2018-05-30 17:09:40,127 INFO: Worker exiting (pid: 12148) 
+2018-05-30 17:09:40,127 INFO: Worker exiting (pid: 12162) 
+2018-05-30 17:09:40,128 INFO: Worker exiting (pid: 12149) 
+2018-05-30 17:09:40,128 INFO: Worker exiting (pid: 12164) 
+2018-05-30 17:10:31,697 INFO: Worker exiting (pid: 12187) 
+2018-05-30 17:10:31,697 INFO: Worker exiting (pid: 12185) 
+2018-05-30 17:10:31,696 INFO: Worker exiting (pid: 12186) 
+2018-05-30 17:10:31,698 INFO: Worker exiting (pid: 12184) 
+2018-05-30 17:25:04,234 INFO: Worker exiting (pid: 12228) 
+2018-05-30 17:25:04,240 INFO: Worker exiting (pid: 12229) 
+2018-05-30 17:25:04,243 INFO: Worker exiting (pid: 12230) 
+2018-05-30 17:25:16,985 INFO: Worker exiting (pid: 12226) 
+2018-05-30 17:25:16,987 INFO: Worker exiting (pid: 12269) 
+2018-05-30 17:25:16,986 INFO: Worker exiting (pid: 12268) 
+2018-05-30 17:30:49,864 INFO: Worker exiting (pid: 12285) 
+2018-05-30 17:30:49,872 INFO: Worker exiting (pid: 12286) 
+2018-05-30 17:30:49,876 INFO: Worker exiting (pid: 12288) 
+2018-05-30 17:31:50,448 INFO: Worker exiting (pid: 12303) 
+2018-05-30 17:31:50,452 INFO: Worker exiting (pid: 12304) 
+2018-05-30 17:31:50,639 INFO: Worker exiting (pid: 12306) 
+2018-05-30 17:33:50,442 INFO: Worker exiting (pid: 12289) 
+2018-05-30 17:33:50,448 INFO: Worker exiting (pid: 12315) 
+2018-05-30 17:33:51,893 INFO: Worker exiting (pid: 12316) 
+2018-05-30 17:33:51,893 INFO: Worker exiting (pid: 12314) 
+2018-05-30 17:33:51,893 INFO: Worker exiting (pid: 12323) 
+2018-05-30 17:34:34,656 INFO: Worker exiting (pid: 12333) 
+2018-05-30 17:34:34,660 INFO: Worker exiting (pid: 12336) 
+2018-05-30 17:35:08,359 INFO: Worker exiting (pid: 12337) 
+2018-05-30 17:35:08,358 INFO: Worker exiting (pid: 12335) 
+2018-05-30 17:35:08,359 INFO: Worker exiting (pid: 12345) 
+2018-05-30 17:35:08,371 INFO: Worker exiting (pid: 12346) 
+2018-05-30 17:37:33,877 INFO: Worker exiting (pid: 12357) 
+2018-05-30 17:37:33,877 INFO: Worker exiting (pid: 12356) 
+2018-05-30 17:37:33,878 INFO: Worker exiting (pid: 12360) 
+2018-05-30 17:37:33,876 INFO: Worker exiting (pid: 12355) 
+2018-05-30 17:39:29,650 INFO: Worker exiting (pid: 12383) 
+2018-05-30 17:39:29,656 INFO: Worker exiting (pid: 12385) 
+2018-05-30 17:42:19,138 INFO: Worker exiting (pid: 12384) 
+2018-05-30 17:42:19,144 INFO: Worker exiting (pid: 12397) 
+2018-05-30 17:47:34,756 INFO: Worker exiting (pid: 12386) 
+2018-05-30 17:47:34,764 INFO: Worker exiting (pid: 12395) 
+2018-05-30 18:26:47,572 INFO: Worker exiting (pid: 12436) 
+2018-05-30 18:26:47,573 INFO: Worker exiting (pid: 12437) 
+2018-05-30 18:26:47,574 INFO: Worker exiting (pid: 12443) 
+2018-05-30 18:26:47,573 INFO: Worker exiting (pid: 12442) 
+2018-05-30 18:27:33,675 INFO: Worker exiting (pid: 12480) 
+2018-05-30 18:27:33,680 INFO: Worker exiting (pid: 12483) 
+2018-05-30 19:29:32,665 INFO: Worker exiting (pid: 12493) 
+2018-05-30 19:29:32,664 INFO: Worker exiting (pid: 12492) 
+2018-05-30 19:29:32,671 INFO: Worker exiting (pid: 12485) 
+2018-05-30 19:31:38,358 INFO: Worker exiting (pid: 12573) 
+2018-05-30 19:31:38,364 INFO: Worker exiting (pid: 12576) 
+2018-05-30 20:34:39,223 INFO: Worker exiting (pid: 12584) 
+2018-05-30 20:34:39,228 INFO: Worker exiting (pid: 12585) 
+2018-05-30 20:36:03,950 INFO: Worker exiting (pid: 12572) 
+2018-05-30 20:36:03,950 INFO: Worker exiting (pid: 12640) 
+2018-05-30 20:38:57,063 INFO: Worker exiting (pid: 12651) 
+2018-05-30 20:38:57,068 INFO: Worker exiting (pid: 12653) 
+2018-05-30 20:39:41,617 INFO: Worker exiting (pid: 12655) 
+2018-05-30 20:39:41,616 INFO: Worker exiting (pid: 12654) 
+2018-05-30 20:39:41,617 INFO: Worker exiting (pid: 12665) 
+2018-05-30 20:39:41,623 INFO: Worker exiting (pid: 12667) 
+2018-05-30 20:42:03,212 INFO: Worker exiting (pid: 12677) 
+2018-05-30 20:42:03,211 INFO: Worker exiting (pid: 12675) 
+2018-05-30 20:42:03,213 INFO: Worker exiting (pid: 12679) 
+2018-05-30 20:42:03,212 INFO: Worker exiting (pid: 12678) 
+2018-05-30 20:43:21,783 INFO: Worker exiting (pid: 12692) 
+2018-05-30 20:45:20,008 INFO: Worker exiting (pid: 12695) 
+2018-05-30 20:45:20,008 INFO: Worker exiting (pid: 12703) 
+2018-05-30 20:46:29,843 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 266, in subscribe
+    'SNSTopic': app.config['AWS_SNS_ARCHIVE_RETRIEVE_TOPIC'], 'Tier': 'Expedited'})
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.InsufficientCapacityException: An error occurred (InsufficientCapacityException) when calling the InitiateJob operation (reached max retries: 4): There is insufficient capacity to process this Expedited request.
+2018-05-30 20:46:42,959 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-30 20:49:42,698 INFO: Worker exiting (pid: 12714) 
+2018-05-30 20:49:42,699 INFO: Worker exiting (pid: 12715) 
+2018-05-30 20:49:42,699 INFO: Worker exiting (pid: 12716) 
+2018-05-30 20:49:42,698 INFO: Worker exiting (pid: 12717) 
+2018-05-30 20:59:15,212 INFO: Worker exiting (pid: 12744) 
+2018-05-30 20:59:15,213 INFO: Worker exiting (pid: 12740) 
+2018-05-30 20:59:15,212 INFO: Worker exiting (pid: 12742) 
+2018-05-30 20:59:15,212 INFO: Worker exiting (pid: 12741) 
+2018-05-30 21:02:50,255 INFO: Worker exiting (pid: 12793) 
+2018-05-30 21:02:50,260 INFO: Worker exiting (pid: 12795) 
+2018-05-30 21:07:01,117 INFO: Worker exiting (pid: 12796) 
+2018-05-30 21:07:01,117 INFO: Worker exiting (pid: 12797) 
+2018-05-30 21:07:01,117 INFO: Worker exiting (pid: 12806) 
+2018-05-30 21:07:01,116 INFO: Worker exiting (pid: 12805) 
+2018-05-30 21:16:36,242 INFO: Worker exiting (pid: 12855) 
+2018-05-30 21:16:36,243 INFO: Worker exiting (pid: 12858) 
+2018-05-30 21:16:36,242 INFO: Worker exiting (pid: 12857) 
+2018-05-30 21:16:36,243 INFO: Worker exiting (pid: 12860) 
+2018-05-30 21:17:37,925 INFO: Worker exiting (pid: 12878) 
+2018-05-30 21:17:37,932 INFO: Worker exiting (pid: 12879) 
+2018-05-30 21:22:13,154 INFO: Worker exiting (pid: 12875) 
+2018-05-30 21:22:13,154 INFO: Worker exiting (pid: 12877) 
+2018-05-30 21:22:13,156 INFO: Worker exiting (pid: 12893) 
+2018-05-30 21:22:13,155 INFO: Worker exiting (pid: 12892) 
+2018-05-30 21:24:16,681 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 263, in subscribe
+    'SNSTopic': app.config['AWS_SNS_ARCHIVE_RETRIEVE_TOPIC'], 'Tier': 'Expedited'})
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.InsufficientCapacityException: An error occurred (InsufficientCapacityException) when calling the InitiateJob operation (reached max retries: 4): There is insufficient capacity to process this Expedited request.
+2018-05-30 21:27:46,525 INFO: Worker exiting (pid: 12924) 
+2018-05-30 21:27:46,527 INFO: Worker exiting (pid: 12928) 
+2018-05-30 21:27:46,527 INFO: Worker exiting (pid: 12927) 
+2018-05-30 21:27:46,526 INFO: Worker exiting (pid: 12925) 
+2018-05-30 21:29:09,385 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 263, in subscribe
+    'SNSTopic': app.config['AWS_SNS_ARCHIVE_RETRIEVE_TOPIC'], 'Tier': 'Expedited'})
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.InsufficientCapacityException: An error occurred (InsufficientCapacityException) when calling the InitiateJob operation (reached max retries: 4): There is insufficient capacity to process this Expedited request.
+2018-05-31 16:44:41,509 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-05-31 16:45:21,027 INFO: Worker exiting (pid: 12964) 
+2018-06-02 13:19:10,304 INFO: Worker exiting (pid: 12967) 
+2018-06-02 13:42:05,897 INFO: Worker exiting (pid: 20667) 
+2018-06-02 13:42:05,898 INFO: Worker exiting (pid: 12968) 
+2018-06-02 13:42:05,899 INFO: Worker exiting (pid: 12966) 
+2018-06-02 13:43:08,094 INFO: Worker exiting (pid: 21014) 
+2018-06-02 13:44:42,370 INFO: Worker exiting (pid: 21026) 
+2018-06-02 13:46:16,482 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1614, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1517, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/_compat.py", line 33, in reraise
+    raise value
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1612, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1598, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/ubuntu/gas/decorators.py", line 31, in decorated_function
+    return fn(*args, **kwargs)
+  File "/home/ubuntu/gas/views.py", line 263, in subscribe
+    'SNSTopic': app.config['AWS_SNS_ARCHIVE_RETRIEVE_TOPIC'], 'Tier': 'Expedited'})
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/botocore/client.py", line 314, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/botocore/client.py", line 612, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.errorfactory.InsufficientCapacityException: An error occurred (InsufficientCapacityException) when calling the InitiateJob operation (reached max retries: 4): There is insufficient capacity to process this Expedited request.
+2018-06-02 13:46:49,107 INFO: Worker exiting (pid: 21017) 
+2018-06-02 13:46:49,108 INFO: Worker exiting (pid: 21016) 
+2018-06-02 13:46:49,108 INFO: Worker exiting (pid: 21015) 
+2018-06-02 13:46:49,107 INFO: Worker exiting (pid: 21029) 
+2018-06-02 13:48:43,635 INFO: Worker exiting (pid: 21057) 
+2018-06-02 13:48:54,777 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-06-02 13:49:02,899 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-06-02 15:19:02,766 INFO: Worker exiting (pid: 21049) 
+2018-06-02 15:19:02,766 INFO: Worker exiting (pid: 21048) 
+2018-06-02 15:19:02,767 INFO: Worker exiting (pid: 21065) 
+2018-06-02 15:19:02,767 INFO: Worker exiting (pid: 21050) 
+2018-06-02 15:19:51,372 INFO: Worker exiting (pid: 21221) 
+2018-06-02 15:19:51,380 INFO: Worker exiting (pid: 21225) 
+2018-06-02 15:21:25,776 INFO: Worker exiting (pid: 21222) 
+2018-06-02 15:21:30,515 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-06-02 15:26:13,321 INFO: Worker exiting (pid: 21239) 
+2018-06-02 15:27:45,549 INFO: Worker exiting (pid: 21234) 
+2018-06-02 15:27:54,262 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-06-02 15:30:01,838 INFO: Worker exiting (pid: 21223) 
+2018-06-02 15:30:16,914 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-06-02 15:31:28,046 INFO: Worker exiting (pid: 21247) 
+2018-06-02 15:33:06,167 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-06-02 15:33:45,408 INFO: Worker exiting (pid: 21233) 
+2018-06-02 15:39:25,010 INFO: Worker exiting (pid: 21244) 
+2018-06-02 15:39:25,016 INFO: Worker exiting (pid: 21268) 
+2018-06-02 15:51:39,249 INFO: Worker exiting (pid: 21271) 
+2018-06-02 15:51:39,256 INFO: Worker exiting (pid: 21279) 
+2018-06-02 18:05:40,984 INFO: Worker exiting (pid: 21281) 
+2018-06-02 18:05:40,983 INFO: Worker exiting (pid: 21274) 
+2018-06-02 18:05:40,984 INFO: Worker exiting (pid: 21303) 
+2018-06-02 18:05:40,984 INFO: Worker exiting (pid: 21302) 
+2018-06-02 18:08:17,422 INFO: Worker exiting (pid: 21502) 
+2018-06-02 18:08:17,423 INFO: Worker exiting (pid: 21506) 
+2018-06-02 18:08:17,421 INFO: Worker exiting (pid: 21503) 
+2018-06-02 18:08:29,892 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-06-02 18:19:43,198 INFO: Worker exiting (pid: 21525) 
+2018-06-02 18:19:43,204 INFO: Worker exiting (pid: 21527) 
+2018-06-02 18:54:24,600 INFO: Worker exiting (pid: 21528) 
+2018-06-02 18:54:24,600 INFO: Worker exiting (pid: 21524) 
+2018-06-02 18:54:24,602 INFO: Worker exiting (pid: 21562) 
+2018-06-02 18:54:24,601 INFO: Worker exiting (pid: 21560) 
+2018-06-02 19:07:32,285 INFO: Worker exiting (pid: 21605) 
+2018-06-02 19:07:39,472 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-06-02 19:07:56,112 INFO: Worker exiting (pid: 21607) 
+2018-06-02 19:07:56,111 INFO: Worker exiting (pid: 21625) 
+2018-06-02 19:07:56,119 INFO: Worker exiting (pid: 21608) 
+2018-06-02 19:51:06,556 INFO: Worker exiting (pid: 21632) 
+2018-06-02 19:55:10,930 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-06-02 19:56:05,050 INFO: Worker exiting (pid: 21633) 
+2018-06-02 19:56:11,478 ERROR: Exception on /subscribe [POST] 
+Traceback (most recent call last):
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1982, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1615, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1630, in finalize_request
+    response = self.make_response(rv)
+  File "/home/ubuntu/.virtualenvs/mpcs/lib/python3.6/site-packages/flask/app.py", line 1725, in make_response
+    raise ValueError('View function did not return a response')
+ValueError: View function did not return a response
+2018-06-02 20:34:20,025 INFO: Worker exiting (pid: 21636) 
+2018-06-02 20:34:20,026 INFO: Worker exiting (pid: 21635) 
+2018-06-02 20:34:20,026 INFO: Worker exiting (pid: 21754) 
+2018-06-02 20:34:20,026 INFO: Worker exiting (pid: 21763) 

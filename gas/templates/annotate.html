@@ -1,0 +1,72 @@
+<!--
+annotate.html - Direct upload to Amazon S3 using signed POST request
+Copyright (C) 2011-2018 Vas Vasiliadis <vas@uchicago.edu>
+University of Chicago
+-->
+
+{% extends "base.html" %}
+
+{% block title %}Annotate{% endblock %}
+
+{% block body %}
+
+  {% include "header.html" %}
+  <script type='text/javascript'>
+    function go_to_subscribe()
+    {
+      alert('File size is too large, please subscribe to upload!')
+      window.location.replace("{{url_for('subscribe')}}")
+    }
+    function check_size(size)
+    {
+      var file_name
+      file_name = document.getElementById('upload-file').files[0]
+      if ((file_name.size <= size || size < 0) && file_name)
+      {
+        return true
+      } 
+      else 
+      {
+        go_to_subscribe()
+        return false
+      }
+    }   
+  </script>
+  <div class="container">
+    
+    <div class="page-header">
+      <h1>Annotate VCF File</h1>
+    </div>
+
+  	<div class="form-wrapper">
+      <form role="form" action="{{ s3_post.url }}" method="post" enctype="multipart/form-data" onSubmit="return check_size({{ size }})">
+        {% for key, value in s3_post.fields.items() %}
+        <input type="hidden" name="{{ key }}" value="{{ value }}" />
+        {% endfor %}
+
+        <script src="annotate.js"></script>
+
+        <div class="row">
+          <div class="form-group col-md-6">
+            <label for="upload">Select VCF Input File</label>
+            <div class="input-group col-md-12">
+              <span class="input-group-btn">
+                <span class="btn btn-default btn-file btn-lg">Browse&hellip; <input type="file" name="file" id="upload-file" /></span>
+              </span>
+              <input type="text" class="form-control col-md-6 input-lg" readonly />
+            </div>
+          </div>
+        </div>
+
+        <br />
+  			<div class="form-actions">
+  				<input class="btn btn-lg btn-primary" type="submit" value="Annotate" onclick="showFileSize()" />
+  			</div>
+      </form>
+    </div>
+    
+  </div>
+{% endblock %}
+<div class="form-group">
+    <input type="file" name="file" id="fileUploadCtrl" />
+</div>
